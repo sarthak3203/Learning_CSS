@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #parent{
+            height: 400px;
+            width: 300px;
+            background-color: aqua;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row;
+            
+            
+            justify-content: space-around; 
+
+        
+
+            
+        }
+        .child{
+            height: 50px;
+            width: 100px;
+            background-color: rgb(37, 192, 84);
+            
+            margin: 2px;
+        }
+       
+        #box3{
+            flex-shrink: 2;
+            
+        }
+        #box2{
+            flex-shrink: 5;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="box1" class="child">box1</div>
+        <div id="box2" class="child">box2</div>
+        <div id="box3" class="child">box3</div>
+        <div id="box4" class="child">box4</div>
+        <div id="box5" class="child">box5</div>
+    </div>
+    
+</body>
+</html>

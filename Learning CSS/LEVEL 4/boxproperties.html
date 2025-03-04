@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Properties</title>
+    <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .nav{
+        height: 20px;
+        width: 100px;
+        margin-left: 50px;
+        background-color: darkturquoise;
+        display: inline-block;
+        text-align: center;
+        font-size: medium;
+        border: 2px solid;
+        padding: 10px;
+
+    }
+    #home{
+        box-sizing: border-box;
+        border-radius: 20px;
+        text-align: justify;
+    }
+</style>
+</head>
+<body>
+    <div>
+    <div id ="home" class="nav">Home</div>
+    <div class="nav">Contact Us</div>
+    <div class="nav">Settings</div>
+    <div class="nav">Help</div>
+</div>
+    
+</body>
+</html>
