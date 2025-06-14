@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    .box {
+      width: 200px;
+      height: 100px;
+      margin: 20px;
+      color: white;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    .static {
+      background: gray;
+      /* Default position - follows normal flow */
+    }
+
+    .relative {
+      background: blue;
+      position: relative;
+      top: 20px;
+      left: 10px;
+      /* Moved from its original spot, but space still reserved */
+    }
+
+    .absolute-container {
+      position: relative;
+      height: 150px;
+      background: lightgray;
+      /* This is the parent for the absolute box */
+    }
+
+    .absolute {
+      background: red;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      /* Removed from normal flow, placed 10px from top/left of parent */
+    }
+
+    .fixed {
+      background: green;
+      position: fixed;
+      top: 0;
+      right: 0;
+      /* Always sticks to top-right of screen, even on scroll */
+    }
+
+    .sticky {
+      background: orange;
+      position: sticky;
+      top: 0;
+      /* Acts like relative, but sticks to top when scrolled to */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Static: Normal flow -->
+  <div class="box static">Static</div>
+
+  <!-- Relative: Offset from normal position -->
+  <div class="box relative">Relative</div>
+
+  <!-- Absolute inside a relative parent -->
+  <div class="absolute-container">
+    <!-- Positioned relative to this parent -->
+    <div class="box absolute">Absolute</div>
+  </div>
+
+  <!-- Fixed: Stuck to viewport -->
+  <div class="box fixed">Fixed</div>
+
+  <!-- Sticky: Scroll to see effect -->
+  <div style="height: 1000px;">
+    <div class="box sticky">Sticky</div>
+    <p style="margin: 30px;">Scroll down to see sticky in action.</p>
+  </div>
+
+</body>
+</html>

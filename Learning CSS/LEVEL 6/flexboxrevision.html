@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        * {
+            margin: 5px;
+        }
+
+        #container {
+            height: 600px;
+            width: 450px;
+            background-color: rgb(109, 106, 102);
+            display: flex;
+            justify-content: left; 
+            flex-wrap:wrap;
+           align-items:start;
+           align-content: normal;
+           /*for align-self to work, make sure align-content:normal, or remove the align-content property*/
+        }
+        /*if you set flexx direction to column then justify-content and align-content will swap, justify content becomes align content and vice versa*/
+
+        .box {
+            height: 70px;
+            width: 65px;
+            margin: 5px;
+        }
+
+        #box1 {
+            background-color: aquamarine;
+        }
+
+        #box2 {
+            background-color: rgb(232, 241, 238);
+            align-self: flex-start;
+        }
+
+        #box3 {
+            background-color: rgb(187, 243, 182);
+        }
+
+        #box4 {
+            background-color: rgb(232, 241, 238);
+            align-self: flex-start;
+            /*to make this align self work, set align-items:end and align-content should be normal or remove align-content*/
+        }
+
+        #box5 {
+            background-color: rgb(37, 245, 176);
+        }
+
+        #box6 {
+            background-color: rgb(188, 226, 233);
+        }
+
+        #box7 {
+            background-color: rgb(51, 158, 245);
+           align-self: flex-end;
+
+           /* this align-self:end or any align-self wont work if the container is using any value of align content except align-content:normal*/
+        }
+
+        #box8 {
+            background-color: rgb(105, 226, 220);
+        }
+
+        #box9 {
+            background-color: rgb(74, 230, 152);
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+
+        <div id="box1" class="box">box1</div>
+        <div id="box2" class="box">box2</div>
+        <div id="box3" class="box">box3</div>
+        <div id="box4" class="box">box4</div>
+
+         <div id="box5" class="box">box5</div>
+        <div id="box6" class="box">box6</div>
+    <div id="box7" class="box">box7</div>
+    <div id="box8" class="box">box8</div>
+    <div id="box9" class="box">box9</div>  
+
+    </div>
+
+</body>
+
+</html>

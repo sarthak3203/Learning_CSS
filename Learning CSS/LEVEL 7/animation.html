@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        @keyframes animation-test{
+            from{
+                left: 30px;
+            }
+            to{left: 300px;}
+        }
+
+        #boxx{
+            height: 80px;
+            width: 80px;
+            border-radius: 100%;
+            background-color: aqua;
+            animation: animation-test 4s ease-in-out 1s 3;
+            position: relative;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div id="boxx"></div>
+    
+</body>
+</html>

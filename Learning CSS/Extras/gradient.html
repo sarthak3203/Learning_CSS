@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clear Gradient Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background-color: #f2f2f2;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .gradient-box {
+      width: 300px;
+      height: 200px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      text-shadow: 1px 1px 4px black;
+    }
+
+    .linear-gradient {
+      background: linear-gradient(to right, red, yellow);
+    }
+
+    .radial-gradient {
+      background: radial-gradient(circle, purple, orange);
+    }
+
+    .conic-gradient {
+      background: conic-gradient(from 0deg, red, yellow, lime, cyan, blue, magenta, red);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="gradient-box linear-gradient">
+    Linear Gradient
+  </div>
+
+  <div class="gradient-box radial-gradient">
+    Radial Gradient
+  </div>
+
+  <div class="gradient-box conic-gradient">
+    Conic Gradient
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revision</title>
+    <style>
+        * {
+            margin-left: 20px;
+        }
+
+        .text {
+            color: rgb(198, 178, 216);
+            margin-top: 10px;
+
+        }
+
+        .box {
+            margin-top: 20px;
+            height: 50px;
+            width: 150px;
+            border: 2px solid rgb(106, 119, 86);
+            text-align: center;
+        }
+        #text1{
+            font-size: 2em;
+        }
+        #text2{
+            font-size: 2rem;
+            /*But rem is not based on <body>, it is based on the <html> default size, which is 16px unless changed, so font size of text2 will be 32 px*/
+        }
+    </style>
+</head>
+
+<body >
+    <div id="textcontainer" class="text" style="font-size: 20px;">
+        <div id="text1" class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam ipsa animi magni
+            temporibus
+            excepturi iusto delectus exercitationem totam omnis molestias. Dolore autem voluptatibus hic ea consequatur
+            vel tempore dolores odio?</div>
+        <div id="text2" class="text" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, a quasi
+            voluptatem
+            distinctio error qui voluptates beatae repellat impedit dolore dolorum eius deleniti ex, quod sit nostrum
+            aspernatur inventore, perferendis veniam consectetur aliquid quae nisi nam. Dicta rem voluptas dolore?
+
+        </div>
+    </div>
+
+    <div>
+        <div id="box1" class="box" style="height: 70vh;">box 1</div>
+        <div id="box2" class="box">box 2</div>
+        <div id="box3" class="box" style="height: 40vh;">box 3</div>
+        <div id="box4" class="box" style="width: 70vw;">box 4</div>
+        <div id="box5" class="box">box 5</div>
+        <div id="box6" class="box" style="width: 40vw;">box6
+        </div>
+    </div>
+
+
+</body>
+
+</html>

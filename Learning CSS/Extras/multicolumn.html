@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Multi-Column Layout Example</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+
+    .newspaper {
+      background-color: white;
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+      
+      /* Multi-column properties */
+      column-count: 3;
+      column-width: 250px;
+      column-gap: 30px;
+      column-rule: 2px solid #999;
+    }
+
+    .newspaper h2 {
+      column-span: all; /* Make this heading span across all columns */
+      text-align: center;
+      color: darkblue;
+    }
+
+    .highlight-box {
+      background-color: #eef;
+      padding: 10px;
+      border-left: 5px solid darkblue;
+      margin: 10px 0;
+      break-inside: avoid; /* Avoid breaking this box between columns */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="newspaper">
+    <h2>Daily Tech Digest</h2>
+    
+    <p>
+      The world of technology continues to evolve rapidly, with innovations in artificial intelligence, quantum computing, and space exploration making headlines every day. Companies are investing heavily in research to stay ahead of the curve.
+    </p>
+
+    <div class="highlight-box">
+      🚀 <strong>SpaceX</strong> successfully launched its next-gen Starship rocket. Experts say this may redefine how we approach Mars colonization.
+    </div>
+
+    <p>
+      In other news, cybersecurity threats are increasing in both frequency and complexity. Organizations are urged to update their defense systems and educate employees to avoid phishing attacks and data breaches.
+    </p>
+
+    <div class="highlight-box">
+      🔐 New AI-based security systems can detect suspicious activity in real-time and respond within milliseconds.
+    </div>
+
+    <p>
+      Meanwhile, the shift to remote and hybrid work models has reshaped office culture. Productivity tools like Slack, Zoom, and Notion are seeing continued adoption.
+    </p>
+  </div>
+
+</body>
+</html>

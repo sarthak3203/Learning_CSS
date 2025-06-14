@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Centered Text Example</title>
+  <style>
+    /* Parent box to contain the text */
+    .container {
+      position: relative; /* Needed for absolutely positioned child */
+      width: 400px;
+      height: 300px;
+      background-color: #d0e6f7;
+      border: 2px solid #333;
+      margin: 50px auto; /* Center the container on the page horizontally */
+    }
+
+    /* Text to be centered */
+    .centered-text {
+      position: absolute;      /* Allows positioning using top/left */
+      top: 50%;                /* Moves element 50% down from top of container */
+      left: 50%;               /* Moves element 50% right from left of container */
+      transform: translate(-50%, -50%); /* Shifts element back by half its width and height */
+      font-size: 20px;
+      background-color: #ff9966;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="centered-text">I am perfectly centered!</div>
+  </div>
+
+</body>
+</html>

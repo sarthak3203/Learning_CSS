@@ -7,10 +7,14 @@
     <style>
         div{ height: 100px;
             width: 100px;
-            background-image: url(Images/waterfall.jpg);
+            background-image: url(../../Images/waterfall.jpg);
             background-size: contain;
             background-repeat: no-repeat;
             background-position: bottom;
+            background-attachment: scroll;
+            /*Think of your div as a small window, and the background image as a big wall poster behind it.
+             With background-attachment: scroll, the poster moves with the window — it's stuck inside it.
+            With fixed, the poster is stuck to the wall (screen), and only the part visible through the window is shown. If the window (div) is too small or badly positioned, you might not see the poster at all.explains the reason of why the image is not visible when attachment is set to fix*/
         }
     </style>
 </head>
